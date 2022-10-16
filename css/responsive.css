@@ -1,0 +1,217 @@
+@media screen and (max-width: 280px){
+	.mail {
+		font-size: 14px;
+	}
+
+	.hard-skill__title, .experience__title {
+		width: 225px;
+		height: 80px;
+		font-size: 24px;
+	}
+
+	.studies__title1, .studies__title2 {
+		font-size: 22px;
+		width: 180px;
+		height: 90px;
+	}
+
+	.ZIBA {
+		height: 145px;
+	}
+
+	.AHORCADO {
+		height: 200px;
+	}
+
+	.ENCRIPTADOR {
+		height: 190px;
+	}
+
+	.bush__container {
+		width: 99%;
+	}
+}
+
+@media screen and (min-width: 650px){
+	.corner-right:after, .corner-right:before {
+	    left: 98.5%;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.menu__icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.menu__container {
+		top: 70px;
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.title__container {
+		width: 60%;
+	}
+
+	.presentation__title, .presentation__social__link {
+		font-size: 20px;
+	}
+
+	.presentation__social__item {
+		width: 180px;
+		height: 90px;
+	}
+
+	.GH {
+		font-size: 23px;
+	}
+
+	.name__data, .studies__name {
+		font-size: 18px;
+	}
+
+	.name__icon {
+		font-size: 22px;
+	}
+
+	.hard-skill__title, .experience__title {
+		margin-bottom: 0;
+		width: 310px;
+		height: 120px;
+		font-size: 33px;
+	}
+
+	.hard-skill__skill {
+		width: 30%;
+	}
+
+	.studies__title1, .studies__title2 {
+		width: 250px;
+		height: 125px;
+		font-size: 30px;
+	}
+
+	.studies__img {
+		height: 150px;
+	}
+
+	.studies__time {
+		font-size: 14px;
+	}
+
+	.experience__sample__container, .experience__button__container {
+		width: 60%;
+	}
+
+	.ZIBA {
+		height: 255px;
+	}
+
+	.AHORCADO {
+		height: 345px;
+	}
+
+	.ENCRIPTADOR {
+		height: 335px;
+	}
+
+	.bush1:after {
+		content: "";
+		height: 65px;
+		width: 130px;
+		background: url(../img/mario_arbusto_simple_sin_fondo.png) center / contain no-repeat;
+		left: 180px;
+	}
+
+	.about-me__data {
+		width: 60%;
+	}
+
+	.hobbies__title {
+		margin-bottom: 5%;
+	}
+
+	.hobbies__item {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.name__data, .mail, .studies__name {
+		font-size: 22px;
+	}
+
+	.menu__icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__container {
+		top: 100px;
+	}
+
+	.presentation__title, .presentation__social__link {
+		font-size: 26px;
+	}
+
+	.GH {
+		font-size: 28px;
+	}
+
+	.presentation__social__item {
+		width: 220px;
+		height: 110px;
+	}
+
+	.hard-skill__title, .experience__title {
+		margin-bottom: 0;
+		width: 370px;
+		height: 135px;
+		font-size: 40px;
+	}
+
+	.experience__title {
+		margin-bottom: 3%;
+	}
+
+	.hard-skill__skill {
+		width: 35%;
+		height: 120px;
+		font-size: 30px;
+	}
+
+	.hard-skill__icon {
+		font-size: 70px;
+	}
+
+	.studies__title1, .studies__title2 {
+		width: 285px;
+		height: 145px;
+		font-size: 35px;
+	}
+
+	.studies__container {
+		margin-top: 210px;
+	}
+
+	.studies__img {
+		height: 180px;
+	}
+
+	.studies__time {
+		font-size: 18px;
+	}
+
+	.ZIBA {
+		height: 355px;
+	}
+
+	.AHORCADO {
+		height: 480px;
+	}
+
+	.ENCRIPTADOR {
+		height: 425px;
+	}
+}

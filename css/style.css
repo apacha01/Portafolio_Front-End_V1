@@ -1,0 +1,729 @@
+/*///////////COLORES////////////////////////////////////////////////////*/
+:root {
+	--mario-button-color: #c27002;
+	--mario-button-font-color: #fac8ba;
+	--mario-alt-button-color: #fab930;
+	--mario-alt-button-font-color: #994a06;
+	--mario-blue-color: #009cda;
+	--mario-red-color: #e71e07;
+	--mario-yellow-color: #fcd000;
+	--mario-green-color: #42b132;
+	--mario-sky-color: #a1adff;
+}
+/*////////////////////////////////////////////////////////////////////////*/
+
+/*///////////FONTS ///////////////////////////////////////////////////////*/
+@font-face{
+	font-family: "Silkscreen-Regular";
+	src: url(../fonts/Silkscreen-Regular.ttf);
+}
+
+.name__data, .studies__formation, .experience__list, .contact__txt,
+.footer__txt, .contact__label, .about-me__data {
+	font-family: "Silkscreen-Regular";
+}
+/*////////////////////////////////////////////////////////////////////////*/
+@font-face{
+	font-family: "SuperMarioBros";
+	src: url(../fonts/Super-Mario-Bros.ttf);
+}
+
+.hard-skill__title, .studies__title, .experience__title {
+	font-family: "SuperMarioBros";
+}
+/*////////////////////////////////////////////////////////////////////////*/
+@font-face{
+	font-family: "Player2";
+	src: url(../fonts/PressStart2P.ttf);
+}
+
+.presentation__title, .about-me__title, .hobbies__title, .contact__title {
+	font-family: "Player2", sans-serif;
+}
+/*////////////////////////////////////////////////////////////////////////*/
+@font-face{
+	font-family: "Arcade";
+	src: url(../fonts/Arcade-Classic.ttf);
+}
+
+.REPO, .DEMO, .hobbie, .contact__button, .menu__item {
+	font-family: "Arcade", sans-serif;
+}
+/*////////////////////////////////////////////////////////////////////////*/
+.presentation__social__link, .studies__name, .experience__list__title {
+	font-weight: bold;
+}
+/*////////////////////////////////////////////////////////////////////////*/
+body {
+	font-family: monospace, sans-serif;
+	background-color: var(--mario-sky-color);
+}
+/*///////////FIN FONTS ///////////////////////////////////////////////////*/
+
+.header, .header__container, .play__container, .presentation__container,
+.presentation__social, .presentation__social__item,
+.hard-skill-section__container, .hard-skill__container, .hard-skill__skill,
+.hard-skill__title, .studies-section__container, .studies__title, .studies__container,
+.studies__title1, .studies__title2, .studies__formation, .studies__img__container,
+.experience__container, .experience__list, .experience__button__container,
+.experience__sample__container, .experience__title, .about-me, .about-me__land,
+.hobbies-section__container, .hobbies__container, .hobbies__land__container,
+.hobbie, .hobbies__tubes, .hobbies__data, .contact, .contact__container, .contact__item,
+.menu__container, .menu, .experience__list, .about-me__container, .bush__container {
+	display: flex;
+}
+
+.hard-skill__container, .studies__title, .studies__formation, .about-me__land,
+.hobbies__container, .hobbies__land__container, .hobbies__data, .presentation__social {
+	flex-wrap: wrap;
+}
+
+.presentation__container, .hard-skill-section__container, .hard-skill__skill,
+.studies-section__container, .studies__title, .studies__container, .experience__list,
+.experience__sample__container, .experience__container, .about-me, .hobbies-section__container,
+.hobbie, .contact, .contact__container, .contact__item, .menu {
+	flex-direction: column;
+}
+
+.header, .play__container, .presentation__container, .presentation__social__item,
+.hard-skill-section__container, .hard-skill__skill, .hard-skill__title,
+.studies-section__container, .studies__title1, .studies__title2, .studies__formation,
+.studies__img__container, .studies__container, .experience__button__container,
+.experience__container, .experience__title, .about-me, .hobbies-section__container,
+.contact__container, .experience__list {
+	align-items: center;
+}
+
+.contact__item {
+	align-items: flex-start;
+}
+
+.bush__container {
+	align-items: flex-end;
+}
+
+.header__container, .studies__img__container,
+.experience__button__container, .hobbie, .bush__container {
+	justify-content: space-between;
+}
+
+.header, .presentation__social__item, .hard-skill__title, .studies__title,
+.studies__title1, .studies__title2, .studies__formation, .experience__container,
+.experience__title, .about-me__land, .hobbies-section__container, .menu__container, 
+.experience__list, .about-me__container {
+    justify-content: center;
+}
+
+.presentation__social, .hard-skill__container {
+	justify-content: space-evenly;
+}
+
+.hobbies__container, .hobbies__tubes {
+	justify-content: space-around;
+}
+
+.presentation__data, .title__container, .hard-skill__skill, .experience__link, 
+.about-me__title, .hobbies-section__container, .contact__txt, .footer__txt, .menu__item {
+	text-align: center;
+}
+
+.LKDIN, .title2, .studies__title2 {
+	color: var(--mario-blue-color);
+}
+
+.CV, .title1, .title5 {
+	color: var(--mario-red-color);
+}
+
+.title3 {
+	color: var(--mario-yellow-color);
+}
+
+.GH, .title4, .studies__title1 {
+	color: var(--mario-green-color);
+}
+
+.presentation__social__link {
+	background-color: transparent;
+}
+
+.header, .hard-skill__skill, .experience__link {
+	color: var(--mario-button-font-color);
+    background-color: var(--mario-button-color);
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px black;
+}
+
+.studies__formation, .experience__sample__container, .hobbie, .menu__container {
+	color: var(--mario-alt-button-font-color);
+    background-color: var(--mario-alt-button-color);
+    border-radius: 2px;
+    box-shadow: 4px 4px 3px black;
+}
+
+.contact__button {
+	color: white;
+	background-color: #077b86;
+	border-radius: 2px;
+    box-shadow: 2px 2px 1px black;
+}
+
+.about-me__land {
+	color: white;
+	background-image: url(../img/mario_tierra.png);
+}
+
+.hobbies__land {
+	background-image: url(../img/mario_piso.png);
+}
+
+.corner-left:before, .corner-left:after, .corner-right:after, .corner-right:before,
+.menu__container, .studies__title, .studies__title2, .cloud {
+	position: absolute;
+}
+
+.header {
+	position: relative;
+	margin: 2%;
+    padding: 2%;
+}
+
+.corner-left:before, .corner-left:after, .corner-right:after, .corner-right:before{
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: var(--mario-button-font-color);
+    box-shadow: 1px 1px black;
+}
+
+.corner-left:before, .corner-right:before{
+    top: 85%;
+}
+
+.corner-left:after, .corner-right:after{
+    top: 10%;
+}
+
+.corner-left:after, .corner-left:before {
+    left: 1%;
+}
+
+.corner-right:after, .corner-right:before {
+    left: 97.5%;
+}
+
+.header__container, .presentation__social, .studies__title {
+	width: 95%;
+}
+
+.play__container {
+	width: 50%;
+	gap: 7px;
+}
+
+.name__data {
+	font-size: 14px;
+}
+
+.menu__icon{
+	background: url(../img/mario_mistery_block_sin_fondo_grande_sin_sombra.png) center / cover no-repeat;
+    width: 27px;
+    height: 27px;
+    box-shadow: 2px 2px 1px black;
+}
+
+.menu__icon:active {
+	animation: slightly_punched .4s backwards;
+}
+
+.hard-skill__skill:hover, .studies__formation:hover, .experience__sample__container:hover {
+	animation: strongly_punched .5s backwards;
+}
+
+@keyframes slightly_punched{
+	50% {transform: translateY(-3px);}
+}
+
+@keyframes strongly_punched{
+	50% {transform: translateY(-5px);}
+}
+
+.menu__container {
+	padding: 20px 0;
+	position: absolute;
+	width: 96%;
+	margin-left: 2%;
+	top: 55px;
+	left: 0;
+	z-index: 999;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s;
+}
+
+.menu {
+	width: 90%;
+	gap: 25px;
+}
+
+.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu__link {
+	display: block;
+	font-size: 22px;
+	padding: 5px 50px;
+	color: var(--mario-alt-button-font-color);
+	border: 1px solid var(--mario-alt-button-font-color);
+}
+
+.presentation {
+	margin-bottom: 20px;
+}
+
+.title__container {
+	padding: 20px;
+}
+
+.presentation__title {
+	display: inline;
+	border-right: 3px solid;
+	animation: blink .5s infinite step-end alternate;
+}
+
+@keyframes blink {
+	50% {border-color: transparent}
+}
+
+.presentation__data {
+	padding: 5px 20px 20px;
+}
+
+.presentation__social{
+	padding: 5px 10px 10px;	
+}
+
+.cloud__simple {
+	background: url(../img/mario_nube_sin_fondo.png) center / cover no-repeat;
+}
+
+.presentation__social__item, .studies__title1, .studies__title2, .cloud__double{
+	background: url(../img/mario_nube_doble_sin_fondo.png) center / cover no-repeat;
+}
+
+.presentation__social__item {	
+    gap: 2px;
+}
+
+.linkedin {
+	width: 120px;
+	height: 60px;
+}
+
+.github {
+	width: 110px;
+	height: 55px;
+}
+
+.cv {
+	width: 140px;
+	height: 70px;
+}
+
+.presentation__social__icon {
+	padding-top: 1px;
+	font-size: 13px;
+	transform: rotate(45deg);
+}
+
+.hard-skill-section__container, .studies-section__container, .experience__container,
+.hard-skill__container, .footer__txt {
+	width: 90%;
+	padding: 5%;
+}
+
+.hard-skill__title, .experience__title {
+	width: 275px;
+    height: 100px;
+    font-size: 30px;
+    margin-bottom: 5%;
+    background: url(../img/mario_nube_triple.png) center / cover no-repeat;
+}
+
+.hard-skill__skill {
+	width: 40%;
+	padding: 10px 0;
+	margin: 2%;
+	margin-bottom: 4%;
+	gap: 10px;
+}
+
+.hard-skill__icon {
+	font-size: 55px;
+}
+
+.studies, .experience__link, .about-me__sky, .about-me__land{
+	position: relative;
+}
+
+.studies__title {
+	top: 30px;
+}
+
+.studies__title1, .studies__title2 {
+	font-size: 25px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.studies__title1 {
+	margin-left: 45%;
+    transform: translateX(-50%);
+}
+
+.studies__title2 {
+	top: 60%;
+	margin-left: 55%;
+    transform: translateX(-50%);
+}
+
+.studies__container {
+	margin-top: 190px;
+	gap: 10px;
+}
+
+.studies__formation {
+	width: 80%;
+	margin: 2%;
+	padding: 2%;
+}
+
+.studies__img, .studies__name, .studies__time, .studies__img__container {
+	margin: 5px 0;
+	width: 100%;
+}
+
+.studies__img__container {
+	border-radius: 5px;
+	background-color: white;
+}
+
+.studies__img {
+	height: 100px;
+}
+
+.studies__name {
+	font-size: 14px;
+}
+
+.studies__time {
+	font-size: 12px;
+}
+
+.UTN {
+	background: url(../img/UTN_logo.jpg) center / contain no-repeat;
+}
+
+.ORACLE {
+	width: 45%;
+	background: url(../img/Oracle_logo.png) center / contain no-repeat;
+}
+
+.mas {
+	font-size: 50px;
+	color: gray;
+	padding-right: 5px;
+}
+
+.ALURA {
+	width: 45%;
+	margin-right: 10px;
+	background: url(../img/Alura_logo_sin_fondo.png) center / contain no-repeat;
+}
+
+.ETN28 {
+	background: url(../img/Escudo_et28.jpg) center / contain no-repeat;
+}
+
+.experience__title {
+	margin-top: 50px;
+}
+
+.experience__list, .experience__sample__container {
+	padding: 15px;
+	gap: 20px;
+}
+
+.experience__list, .experience__button__container {
+	width: 100%;
+ }
+
+.experience__sample__container {
+	width: 90%;
+}
+
+.experience__img {
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.AHORCADO {
+	background-image: url(../img/Juego-Ahorcado.png);
+	height: 250px;
+}
+
+.ENCRIPTADOR {
+	background-image: url(../img/Encriptador.png);
+	height: 240px;
+}
+
+.ZIBA {
+	background-image: url(../img/Ziba-Pasteleria.png);
+	height: 185px;
+}
+
+.experience__link {
+	padding: 5px 15px;
+	color: white;
+	font-size: 18px;
+}
+
+.experience__link:active {
+	box-shadow: none;
+	transform: translate(2px, 2px);
+}
+
+.about-me, .hobbies, .contact, .footer {
+	width: 100%;
+	color: white;
+}
+
+.about-me__sky {
+	width: 100%;
+	height: 50px;
+	margin-top: 10%;
+}
+/*
+.cloud {
+    height: 100px;
+    z-index: -1;
+}
+
+.cloud__simple {
+	width: 135px;
+}
+
+.cloud__double {
+	width: 200px;
+}
+
+.cloud1 {
+	top: -2950px; 
+	animation: wind 15s infinite linear;
+	-webkit-animation: wind 15s infinite linear;
+}
+
+.cloud2 {
+	top: -2350px;
+	animation: wind 25s infinite linear;
+	-webkit-animation: wind 25s infinite linear;
+}
+
+.cloud3 {
+	top: -460px;
+	animation: wind 10s infinite linear;
+	-webkit-animation: wind 10s infinite linear;
+}
+
+.cloud4 {
+	top: -200px;
+	animation: wind 30s infinite linear;
+	-webkit-animation: wind 30s infinite linear;
+}
+
+.cloud5 {
+	top: -105px;
+	animation: wind 20s infinite linear;
+	-webkit-animation: wind 20s infinite linear;
+}
+
+.cloud6 {
+	top: -1850px;
+	animation: wind 20s infinite linear;
+	-webkit-animation: wind 20s infinite linear;
+}
+
+@keyframes wind{
+    0% {left: -300px;}
+    100% {left: 100%;}
+}
+
+@-webkit-keyframes wind {
+	0% {left: -300px;}
+    100% {left: 100%;}
+}
+*/
+
+.about-me__title {
+	font-size: 25px;
+}
+
+.about-me__land {
+	padding: 15px;
+}
+
+.bush__container {
+	width: 90%;
+}
+
+.bush {
+	background: url(../img/mario_arbusto_simple_sin_fondo.png) center / contain no-repeat;
+	top: -65px;
+	left: 10px;
+	height: 65px;
+	width: 130px;
+}
+
+.bush2 {
+	left: calc(100% - 140px);
+}
+
+.about-me__container {
+	width: 85%;
+}
+
+.hobbies-section__container {
+	width: 100%;
+	padding-top: 20%;
+}
+
+.hobbies__title {
+	font-size: 25px;
+	margin-bottom: 10%;
+}
+
+.hobbies__data, .hobbies__item, .hobbies__hobbie, .hobbies__land {
+	width: 100%;
+}
+
+.hobbie__icon {
+	font-size: 30px;
+}
+
+.hobbie {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	margin: 15px;
+	font-size: 17px;
+	animation: floating 2s infinite;
+	-webkit-animation: floating 2s infinite;
+}
+
+.mario__tube {
+	background: url(../img/mario_tube_sin_fondo.png) center / contain no-repeat;
+	height: 100px;
+	width: 100px;
+}
+
+.hobbies__land {
+    height: 48px;
+}
+
+
+@keyframes floating {
+	50% {transform: translateY(-3px);}
+}
+
+@-webkit-keyframes floating {
+	50% {transform: translateY(-3px);}
+}
+
+.contact, .footer {
+	background-color: black;
+}
+
+.contact__roof, .contact__block{
+	background-image: url(../img/mario_tierra_underground.png);
+	width: 100%;
+}
+
+.contact__roof {
+	height: 48px;
+}
+
+.contact__container {
+	padding: 30px 30px 0 30px;
+	gap: 20px;
+}
+
+.contact__title {
+	font-size: 20px;
+}
+
+.contact__label {
+	padding: 3px 0;
+}
+
+.contact__input {
+	align-self: stretch;
+	margin-bottom: 3px;
+}
+
+.contact__msj {
+	width: 250px;
+	height: 100px;
+}
+
+.contact__block {
+	height: 16px;
+    margin-bottom: 15px;
+}
+
+.contact__button {
+	width: 100%;
+	margin: 20px 0;
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+.contact__floor {
+	background-image: url(../img/mario_piso_underground.png);
+	width: 100%;
+	height: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
