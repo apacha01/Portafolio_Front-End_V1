@@ -263,6 +263,7 @@ body {
 
 .menu {
 	width: 90%;
+	margin-left: 5%;
 	gap: 25px;
 }
 
