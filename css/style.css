@@ -250,7 +250,6 @@ body {
 
 .menu__container {
 	padding: 20px 0;
-	position: absolute;
 	width: 96%;
 	margin-left: 2%;
 	top: 55px;
@@ -263,7 +262,6 @@ body {
 
 .menu {
 	width: 90%;
-	margin-left: 5%;
 	gap: 25px;
 }
 
@@ -446,7 +444,7 @@ body {
 }
 
 .ETN28 {
-	background: url(../img/Escudo_et28.jpg) center / contain no-repeat;
+	background: url(../img/Escudo_ET28.jpg) center / contain no-repeat;
 }
 
 .experience__title {

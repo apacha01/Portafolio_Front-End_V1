@@ -116,14 +116,6 @@
 		height: 335px;
 	}
 
-	.bush1:after {
-		content: "";
-		height: 65px;
-		width: 130px;
-		background: url(../img/mario_arbusto_simple_sin_fondo.png) center / contain no-repeat;
-		left: 180px;
-	}
-
 	.about-me__data {
 		width: 60%;
 	}
@@ -162,6 +154,10 @@
 	.presentation__social__item {
 		width: 220px;
 		height: 110px;
+	}
+
+	.presentation__social__icon {
+		font-size: 20px;
 	}
 
 	.hard-skill__title, .experience__title {
