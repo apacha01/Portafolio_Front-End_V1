@@ -3,7 +3,7 @@ let menu = document.getElementById("menu");
 let links = document.getElementsByClassName("menu__link");
 
 function show (){
-	menu.classList.toggle('show');
+	menu.classList.toggle('showMenu');
 }
 
 menuBtn.addEventListener('click', show);
