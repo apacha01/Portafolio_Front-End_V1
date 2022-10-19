@@ -670,6 +670,10 @@ body {
 	font-size: 20px;
 }
 
+.contact__form, .contact__button, .contact__floor, .contact__item {
+	width: 100%;
+}
+
 .contact__label {
 	padding: 3px 0;
 }
@@ -681,7 +685,6 @@ body {
 
 .contact__msg {
 	resize: none;
-	width: 300px;
 	height: 150px;
 }
 
@@ -691,7 +694,6 @@ body {
 }
 
 .contact__button {
-	width: 100%;
 	margin: 20px 0;
 	font-size: 20px;
 	padding: 5px 0;
@@ -699,7 +701,6 @@ body {
 
 .contact__floor {
 	background-image: url(../img/mario_piso_underground.png);
-	width: 100%;
 	height: 48px;
 }
 
