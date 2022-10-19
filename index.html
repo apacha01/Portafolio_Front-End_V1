@@ -256,29 +256,30 @@
 				<div class="contact__container">
 					<h3 class="contact__title">Contacto</h3>
 					<p class="contact__txt">¿Quieres contactarme? Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-					<form id="contact__form" action="#" class="contact__form">
+					<form id="contact__form" action="" class="contact__form">
 						<div class="contact__item">
 							<label for="input__name" class="contact__label">Nombre</label>
-							<input type="text" id="input__name" class="contact__input">
+							<input required type="text" name="input__name" id="input__name" class="contact__input">
 						</div>
 						<div class="contact__block"></div>
 						<div class="contact__item">
 							<label for="input__mail" class="contact__label">Mail</label>
-							<input type="email" id="input__mail" class="contact__input">
+							<input required type="email" name="input__mail" id="input__mail" class="contact__input">
 						</div>
 						<div class="contact__block"></div>
 						<div class="contact__item">
 							<label for="input__subject" class="contact__label">Asunto</label>
-							<input type="text" id="input__subject" class="contact__input">
+							<input type="text" name="input__subject" id="input__subject" class="contact__input">
 						</div>
 						<div class="contact__block"></div>
 						<div class="contact__item">
 							<label for="input__msj" class="contact__label">Mensaje</label>
-							<textarea id="input__msj" class="contact__input contact__msj"></textarea>
+							<textarea name="input__msg" id="input__msg" class="contact__input contact__msg"></textarea>
 						</div>
 						<div class="contact__block"></div>
 						<input type="submit" class="contact__button">
 					</form>
+					<a style="opacity: 0; visibility: hidden;" href="mailto:agustin.pacheco1901@gmail.com" id="button__mailto"></a>
 				</div>
 				<div class="contact__floor"></div>
 			</section>
@@ -291,37 +292,8 @@
 		<!-- <script src="js/fontawesome.all.min.js"></script> -->
 		<script src="js/title_animation.js"></script>
 		<script src="js/menu.js"></script>
+		<script src="js/contact.js"></script>
 	</body>
 </html>
-
-<!-- 
-	html
-		<div class="mario"></div>
-
-	css
-		.mario{
-		    position: absolute;
-		    width: 71px;
-		    height: 72px;
-		    background: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/mariowalking/result.png') left center;
-		    top: 0px;
-		    left:0px;
-	        animation: play 0.8s steps(4) infinite, run 7s both infinite linear;
-		}
-
-		@keyframes play{
-		    100%{background-position: -284px;}
-		}
-
-		@keyframes run{
-		    from{left: -200px;}
-		    to{left: 100%;}
-		}
-
-
-		SALTO 
-		http://www.videogamesprites.net/SuperMarioBros1/Characters/Mario/Mario%20-%20Jump.gif
-
--->
 
 

@@ -165,7 +165,12 @@ body {
 	color: white;
 	background-color: #077b86;
 	border-radius: 2px;
-    box-shadow: 2px 2px 1px black;
+    box-shadow: 1px 1px 1px white;
+}
+
+.contact__button:active {
+	box-shadow: none;
+	transform: translate(1px, 1px);
 }
 
 .about-me__land {
@@ -674,9 +679,10 @@ body {
 	margin-bottom: 3px;
 }
 
-.contact__msj {
-	width: 250px;
-	height: 100px;
+.contact__msg {
+	resize: none;
+	width: 300px;
+	height: 150px;
 }
 
 .contact__block {
