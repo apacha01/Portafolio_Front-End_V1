@@ -670,6 +670,10 @@ body {
 	font-size: 20px;
 }
 
+.contact__form {
+	max-width: 300px;
+}
+
 .contact__form, .contact__button, .contact__floor, .contact__item {
 	width: 100%;
 }
