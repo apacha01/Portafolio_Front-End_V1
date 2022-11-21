@@ -259,24 +259,28 @@
 					<form id="contact__form" action="" class="contact__form">
 						<div class="contact__item">
 							<label for="input__name" class="contact__label">Nombre</label>
-							<input required type="text" name="input__name" id="input__name" class="contact__input">
+							<input required type="text" name="input__name" id="input__name" class="contact__input" data-type="name">
+							<span class="input__error-msg">Este campo no es valido</span>
+							<div class="contact__block"></div>
 						</div>
-						<div class="contact__block"></div>
 						<div class="contact__item">
 							<label for="input__mail" class="contact__label">Mail</label>
-							<input required type="email" name="input__mail" id="input__mail" class="contact__input">
+							<input required type="email" name="input__mail" id="input__mail" class="contact__input" data-type="mail">
+							<span class="input__error-msg">Este campo no es valido</span>
+							<div class="contact__block"></div>
 						</div>
-						<div class="contact__block"></div>
 						<div class="contact__item">
 							<label for="input__subject" class="contact__label">Asunto</label>
-							<input type="text" name="input__subject" id="input__subject" class="contact__input">
+							<input type="text" name="input__subject" id="input__subject" class="contact__input" data-type="subject">
+							<span class="input__error-msg">Este campo no es valido</span>
+							<div class="contact__block"></div>
 						</div>
-						<div class="contact__block"></div>
 						<div class="contact__item">
 							<label for="input__msj" class="contact__label">Mensaje</label>
-							<textarea name="input__msg" id="input__msg" class="contact__input contact__msg"></textarea>
+							<textarea required name="input__msg" id="input__msg" class="contact__input contact__msg" data-type="message"></textarea>
+							<span class="input__error-msg">Este campo no es valido</span>
+							<div class="contact__block"></div>
 						</div>
-						<div class="contact__block"></div>
 						<input type="submit" class="contact__button">
 					</form>
 					<a style="opacity: 0; visibility: hidden;" href="mailto:agustin.pacheco1901@gmail.com" id="button__mailto"></a>
@@ -292,7 +296,7 @@
 		<!-- <script src="js/fontawesome.all.min.js"></script> -->
 		<script src="js/title_animation.js"></script>
 		<script src="js/menu.js"></script>
-		<script src="js/contact.js"></script>
+		<script src="js/contact.js" type="module"></script>
 	</body>
 </html>
 

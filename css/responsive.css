@@ -127,6 +127,10 @@
 	.hobbies__item {
 		width: 50%;
 	}
+
+	.input__error-msg {
+		font-size: 1.2rem;
+	}
 }
 
 @media screen and (min-width: 1024px){
