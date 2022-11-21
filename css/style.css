@@ -46,7 +46,7 @@
 	src: url(../fonts/Arcade-Classic.ttf);
 }
 
-.REPO, .DEMO, .hobbie, .contact__button, .menu__item {
+.REPO, .DEMO, .hobbie, .contact__button, .menu__item, .input__error-msg {
 	font-family: "Arcade", sans-serif;
 }
 /*////////////////////////////////////////////////////////////////////////*/
@@ -183,12 +183,15 @@ body {
 }
 
 .corner-left:before, .corner-left:after, .corner-right:after, .corner-right:before,
-.menu__container, .studies__title, .studies__title2, .cloud {
+.menu__container, .studies__title, .studies__title2, .cloud, .input__error-msg {
 	position: absolute;
 }
 
-.header {
+.header, .studies, .experience__link, .about-me__sky, .about-me__land, .contact__item{
 	position: relative;
+}
+
+.header {
 	margin: 2%;
     padding: 2%;
 }
@@ -366,10 +369,6 @@ body {
 
 .hard-skill__icon {
 	font-size: 55px;
-}
-
-.studies, .experience__link, .about-me__sky, .about-me__land{
-	position: relative;
 }
 
 .studies__title {
@@ -636,7 +635,7 @@ body {
 }
 
 .hobbies__land {
-    height: 48px;
+	height: 48px;
 }
 
 
@@ -693,8 +692,8 @@ body {
 }
 
 .contact__block {
-	height: 16px;
-    margin-bottom: 15px;
+	height: 19px;
+	margin-bottom: 15px;
 }
 
 .contact__button {
@@ -708,32 +707,13 @@ body {
 	height: 48px;
 }
 
+.input__error-msg {
+	display: none;
+	bottom: 16px;
+	left: 1%;
+	font-size: 1.1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.input-invalid .input__error-msg {
+	display: block;
+}

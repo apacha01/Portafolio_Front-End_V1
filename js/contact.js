@@ -1,8 +1,10 @@
+import { validation } from "./validations.js";
+
 const form = document.getElementById('contact__form');
 const mailto = document.getElementById('button__mailto');
 
 
-form.addEventListener( 'submit', handleSubmit);
+form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event){
 	event.preventDefault();
@@ -14,6 +16,18 @@ function handleSubmit(event){
 	mailto.click();
 }
 
+const inputs = document.querySelectorAll('.contact__input');
+const textareaMsg = document.getElementById('input__msg');
+
+inputs.forEach((input) => {
+	input.addEventListener('blur', (input) => {
+		validation(input.target);
+	});
+});
+
+textareaMsg.addEventListener('blur', (txtarea) => {
+	validation(txtarea.target);
+});
 
 
 
