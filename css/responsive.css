@@ -134,8 +134,17 @@
 }
 
 @media screen and (min-width: 1024px){
+	.corner-left:before, .corner-left:after, .corner-right:after, .corner-right:before{
+		width: 5px;
+		height: 5px;
+	}
+
 	.name__data, .mail, .studies__name {
 		font-size: 22px;
+	}
+
+	.name__icon{
+		font-size: 26px;
 	}
 
 	.menu__icon {
